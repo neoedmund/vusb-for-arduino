@@ -149,7 +149,7 @@ section at the end of this file).
  * in a single control-in or control-out transfer. Note that the capability
  * for long transfers increases the driver size.
  */
-/* #define USB_RX_USER_HOOK(data, len)     if(usbRxToken == (uchar)USBPID_SETUP) blinkLED(); */
+/* #define USB_RX_USER_HOOK(data, len)     if(usbRxToken == (uchar)USBPID_SETUP) blinkLED();*/
 /* This macro is a hook if you want to do unconventional things. If it is
  * defined, it's inserted at the beginning of received message processing.
  * If you eat the received message and don't want default processing to
@@ -235,8 +235,8 @@ section at the end of this file).
 #define USB_CFG_DEVICE_VERSION  0x00, 0x01
 /* Version number of the device: Minor number first, then major number.
  */
-#define USB_CFG_VENDOR_NAME     'r','a','n','c','i','d','b','a','c','o','n','.','c','o','m'
-#define USB_CFG_VENDOR_NAME_LEN 15
+#define USB_CFG_VENDOR_NAME     'N','E','O','E','D','M','U','N','D'
+#define USB_CFG_VENDOR_NAME_LEN  9
 /* These two values define the vendor name returned by the USB device. The name
  * must be given as a list of characters under single quotes. The characters
  * are interpreted as Unicode (UTF-16) entities.
@@ -245,8 +245,8 @@ section at the end of this file).
  * obdev's free shared VID/PID pair. See the file USB-IDs-for-free.txt for
  * details.
  */
-#define USB_CFG_DEVICE_NAME     'U','s','b','K','e','y','b','o','a','r','d'
-#define USB_CFG_DEVICE_NAME_LEN 11
+#define USB_CFG_DEVICE_NAME     'N','e','o','e','K','e','y','b','o','a','r','d'
+#define USB_CFG_DEVICE_NAME_LEN 12
 /* Same as above for the device name. If you don't want a device name, undefine
  * the macros. See the file USB-IDs-for-free.txt before you assign a name if
  * you use a shared VID/PID.

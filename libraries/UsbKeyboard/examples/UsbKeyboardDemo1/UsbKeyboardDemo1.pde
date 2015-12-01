@@ -17,9 +17,7 @@ void setup() {
 }
 
 #if BYPASS_TIMER_ISR
-void delayMs(unsigned int ms) {
-   /*
-  */ 
+void delayMs(int ms) {
   for (int i = 0; i < ms; i++) {
     delayMicroseconds(1000);
   }
